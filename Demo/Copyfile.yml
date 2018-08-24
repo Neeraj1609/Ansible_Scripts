@@ -1,0 +1,6 @@
+---
+  - hosts: all
+    tasks:
+     - copy:
+        src: /root/dbdump.db 
+        dest: /root/dbdump.db

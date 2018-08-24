@@ -1,0 +1,11 @@
+- hosts: all
+  vars:
+    app_name: DeployApp2Server
+    repo_url: https://github.com/Neeraj1609/Test1
+    repo_version: master
+    dir_path: /var/lib/tomcat/webapps
+
+  tasks:
+   - name: pull project github
+     git: repo={{repo_url}} dest={{dir_path}} version=V1.0 force=yes track_submodules=yes 
+

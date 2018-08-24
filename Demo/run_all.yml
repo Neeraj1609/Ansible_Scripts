@@ -1,0 +1,4 @@
+- include: tomcat.yml
+- include: deploy_app.yml
+- include: movefile.yml
+- include: restart_tomcat.yml 

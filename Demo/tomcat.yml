@@ -1,0 +1,15 @@
+---
+  - hosts: all 
+    become: yes
+    
+    tasks:
+      - name: Install tomcat 
+        yum:
+          name: tomcat 
+          state: present
+      
+      - name: Ensure tomcat is running
+        service:
+          name: tomcat 
+          state: started
+          enabled: yes          

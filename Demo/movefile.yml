@@ -1,0 +1,5 @@
+---
+  - hosts: all
+    tasks:
+     - name: Copy zip to war
+       command: cp "/var/lib/tomcat/webapps/helloworld.zip" "/var/lib/tomcat/webapps/helloworld.war"
